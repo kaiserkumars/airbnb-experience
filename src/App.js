@@ -6,22 +6,17 @@ import Card from './components/Card';
 import Data from './data';
 
 function App() {
-  console.log(Data);
   const cards = Data.map(singleData => (
     <Card 
       key = {singleData.id}
-      coverImg = {`./images/${singleData.coverImg}`}
-      rating = {singleData.stats.rating}
-      location = {singleData.location}
-      price = {singleData.price}
-      reviewCount = {singleData.stats.reviewCount}
-      title = {singleData.title}
+      item = {singleData}
+      lor = "Hellop"
     />
   ))
   return (
     <div className="App">
       <Navbar/>
-      {/* <Hero/> */}
+      <Hero/>
       <section className="cards--list">
         {cards}
       </section>

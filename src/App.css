@@ -84,6 +84,7 @@ section {
   width: 176px;
   font-size: 14px;
   flex: 0 0 auto;
+  position: relative;
 }
 
 .card-star {
@@ -117,4 +118,14 @@ section {
 /* ADD */
 .card--price {
   margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
